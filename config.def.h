@@ -68,12 +68,12 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function format          argument */
-	{ run_command, "^c#f9e2af^[盛 %s%]  " , "xbacklight -get" },
-	{ run_command, "^c#74c7ec^[墳 %s]  ",         "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ battery_perc, "^c#f5c2e7^[  %s%]  ",         "BAT0" },
-	{ cpu_perc, "^c#cba6f7^[CPU %s%]  ",         "" },
-	{ ram_used, "^c#f38ba8^[RAM %s]  ",         "" },
+	{ run_command,  "^c#fab387^[盛 %s%]  " , "xbacklight -get" },
+	{ run_command,  "^c#89dceb^[墳 %s]  ",         "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ battery_perc, "^c#f5e0dc^[  %s%]  ",         "BAT0" },
+	{ cpu_perc,     "^c#cba6f7^[CPU %s%]  ",         "" },
+	{ ram_used,     "^c#eba0ac^[RAM %s]  ",         "" },
 	/*{ wifi_essid, "[%s]  ",         "wlan0" },*/
-	{ datetime, "^c#eba0ac^[ %s]  "     ,         "%H:%M" },
-	{ datetime, "^c#fab387^[ %s]"     ,         "%d-%b-%G" },
+	{ datetime,     "^c#f5c2e7^[ %s]  "     ,         "%H:%M" },
+	{ datetime,     "^c#b4befe^[ %s]"     ,         "%d-%b-%G" },
 };
